@@ -7,8 +7,8 @@ if ($^O eq 'Win32' or $^O eq 'cygwin') {
     exit 0;
 }
 
-name 'FCGI-Engine';
-all_from 'lib/FCGI/Engine.pm';
+name 'FCGI-Engine-Manager-Server-Hypnotoad-Separate';
+all_from 'lib/FCGI/Engine/Manager/Server/Hypnotoad.pm';
 license 'perl';
 
 # prereqs
@@ -19,6 +19,7 @@ requires 'MooseX::Types::Path::Class';
 requires 'MooseX::NonMoose';
 requires 'Declare::Constraints::Simple';
 requires 'FCGI';
+requires 'FCGI::Engine';
 requires 'CGI::Simple';
 requires 'POSIX';
 requires 'Config::Any';
@@ -42,7 +43,7 @@ build_requires 'Cwd';
 tests('t/*.t');
 
 resources(
-    'repository', => 'git://github.com/bobtfish/fcgi-engine.git',
+    'repository', => 'git://github.com/startsiden/fcgi-engine-manager-server-hypnotoad-separate.git',
 );
 
 WriteAll();
