@@ -12,6 +12,11 @@ has 'server_type' => (
     default  => sub { 'FCGI::Engine' }
 );
 
+has 'socket' => (
+    is => 'ro',
+    default => undef,
+);
+
 has 'hypnotoad' => (
     is       => 'ro',
     isa      => 'Str'
