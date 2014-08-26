@@ -1,7 +1,7 @@
 package FCGI::Engine::Manager::Server::Hypnotoad;
 use Moose;
 
-our $VERSION   = '0.21';
+our $VERSION   = '1.0';
 our $AUTHORITY = 'rofl';
 
 extends 'FCGI::Engine::Manager::Server';
